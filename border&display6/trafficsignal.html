@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Traffic Signal</title>
+        <style>
+            body{
+                background-image: url(./../borders/clouds.png);
+                background-size: cover;
+            }
+            #box{
+                height:500px;
+                width:200px;
+                background-color:black;
+                border:15px solid grey;
+                border-radius: 100px;
+                margin:auto;
+                margin-top:200px
+               
+            }
+            svg{
+                height:700px;
+                width:200px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box">
+            <svg>
+                <circle r="60" cx="100" cy="100" stroke="rgba(237, 158, 158,.5)"stroke-width="10"fill="red"></circle>
+                <circle r="60" cx="100" cy="250" stroke="rgba(236, 236, 170,0.5)"stroke-width="10"fill="yellow"></circle>
+                <circle r="60" cx="100" cy="400" stroke="rgba(107, 209, 107,.5)"stroke-width="10"fill="green"></circle>
+                <rect x="75" y="512" width="50" height="100" stroke="black" stroke-width="1" fill="black"></rect>
+            </svg>
+        </div>
+    </body>
+
+
+</html>

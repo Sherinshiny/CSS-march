@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Login Form</title>
+        <style>
+            :root{
+                background-image: url(./scenary.jpg);
+                background-size: cover;
+            }
+            div{
+                height:420px;
+                width:400px;
+                position:relative;
+                left:1300px;
+                top:200px;
+                background-color: white;
+            }
+            h1{
+                padding-top: 50px;
+                padding-left: 40px;;
+            }
+            ol {
+                list-style-type: none;
+                display:block;
+                
+        
+            }
+            li{
+                padding:2px;
+                font-size: 20px;
+            }
+            input[type=mail]{
+                height:60px;
+                width:330px;
+             border:none;
+               background-color: aliceblue;
+            }
+            input[type=password]{
+                height:60px;
+                width:330px;
+             border:none;
+               background-color: aliceblue;
+            }
+            input[type=submit]{
+                height:60px;
+                width:330px;
+             border:none;
+               background-color: rgb(31, 95, 31);
+               color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <div>
+            <h1>LOGIN</h1>
+            <ol>
+           <li><label for="mail">Email</label></li> 
+            <li><input type="mail" class="mail" name="Enter-email" placeholder="Enter Email"></li></ol>
+            <ol><li><label for="pass">Password</label></li> 
+            <li><input type="password" class="pass" name="Password" placeholder="Enter Password"></li></ol>
+            <ol><li><input type="submit" value="Login"></li></ol>
+        
+        </div>
+        </form>
+    </body>
+</html>

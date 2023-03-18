@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Web Page Design</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" contents="width=device-width,initial-scale=1.0">
+        
+        <script src="https://kit.fontawesome.com/3b11c16bcb.js" crossorigin="anonymous"></script>
+        <style>
+            li{
+                list-style-type: none;
+                display:inline-block;
+                color:black;opacity: .8;
+                
+            }
+            ol{
+                background-color: aliceblue;
+                padding:10px;
+                margin-top: 0px;
+            }
+            a{
+                text-decoration: none;color:black;
+            }
+            th{
+                vertical-align:bottom;
+                padding-bottom: 0px;
+            }
+            #welcome{
+            width:400px;
+            text-align: right;
+        }
+        #lang{
+            width:400px;
+            border:none;
+        }
+       
+        #order{
+            width:450px;
+            text-align: right; 
+        }
+        #list{
+            width:150px; 
+            margin-left:40px;
+        }
+        #recent{
+            width:250px; 
+        }
+        #one{
+            height:80px;
+            width:100%;
+            
+            position:relative;
+        }
+        .logo{
+            position: absolute;
+            left:200px;
+            top:20px;
+        }
+        input[type=search]{
+            height:40px;
+            width:400px;
+            border-radius: 5px;
+            background-color: aliceblue;
+            display: inline;
+            position: absolute;
+            left:400px;
+            top:20px;
+        } 
+        #search{
+            height:38px;
+            width:30px;
+            position: absolute;
+            left:773px;
+            top:103px;
+            border-left:1px solid black;
+
+        }
+        </style>
+    </head>
+    <body>
+        <ol>
+            <li id="welcome">Welcome to GreenMart</li>
+            <li>
+                <table>
+                    <tr>
+                        <th><img src="./flag.png"></th>
+                <th><a href="">English</a></th>
+                <th><i class='fas fa-angle-down' style='font-size:24px'></i></th>
+            </tr>
+            </table>
+            </li>
+            <li id="order"><a href="">Order Tracking</a>  </li>
+            <li id="list"><a href="">My Whislist</a>  </li>
+            <li id="recent"><a href="">Recent Viewed Products</a>  </li>
+
+        </ol>
+        <div id="one">
+            <img src="./logo.svg" class="logo">
+            <input type="search" name="search" placeholder="Search for...">
+        </div>
+           <div id="search"><i class="fa fa-search" style="font-size:24px"></i></div> 
+           
+           
+        
+    </body>
+</html>

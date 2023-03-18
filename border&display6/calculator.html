@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Calculator Designing</title>
+        <style>
+            #box1{
+                height:380px;
+                width:300px;
+                background-color: rgb(206, 180, 143);
+                position:relative;
+                margin:auto;
+                margin-top: 200px;
+              
+            }
+            #box2{
+                height:330px;
+                width:250px;
+                background-color: rgb(53,71,71);
+                border-radius: 10px;
+                position: absolute;
+                left:25px;
+                top:25px;
+              
+            }
+            table,th{
+                height:30px;
+                width:250px;
+                
+                border-spacing: 10px;
+               
+               
+            }
+            th{
+               height:40px;
+               width:150px;
+               
+            }
+            #green{
+                background-color: rgb(187,207,148);
+                border-bottom: 2px solid white;
+                border-right: 2px solid white;
+            }
+            .grey{
+                background-color: rgb(114,114,114);
+                color:white;
+                border-radius: 10px;
+            }
+            .red{
+                background-color: rgb(255,73,105);
+                color:black;
+                border-radius: 10px;
+                margin:5px 5px;
+            }
+            .darkgrey{
+                background-color: rgb(49,49,49);
+                color:white;
+                border-radius: 10px;
+                margin:5px 5px;
+            }
+            .yellow{
+                background-color: rgb(255,153,55);
+                color:black;
+                border-radius: 10px;
+                margin:5px 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box1">
+            <div id="box2">
+                <table>
+                    <tr>
+                        <th colspan="4" id="green"></th>
+                    </tr>
+                    <tr>
+                        <th class="grey">mrc</th>
+                        <th class="grey">m-</th>
+                        <th class="grey">m+</th>
+                        <th class="red">/</th>
+                    </tr>
+                    <tr>
+                        <th class="darkgrey">7</th>
+                        <th class="darkgrey">8</th>
+                        <th class="darkgrey">9</th>
+                        <th  class="red">*</th>
+                    </tr>
+                    <tr>
+                        <th class="darkgrey">4</th>
+                        <th class="darkgrey">5</th>
+                        <th class="darkgrey">6</th>
+                        <th  class="red">-</th>
+                    </tr>
+                    <tr>
+                        <th class="darkgrey">1</th>
+                        <th class="darkgrey">2</th>
+                        <th class="darkgrey">3</th>
+                        <th  class="red">+</th>
+                    </tr>
+                    <tr>
+                        <th class="darkgrey">0</th>
+                        <th class="darkgrey">.</th>
+                        <th class="darkgrey">c</th>
+                        <th class="yellow">=</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

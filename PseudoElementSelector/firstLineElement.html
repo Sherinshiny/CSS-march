@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Before And After Selector</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            div{
+                height:200px;
+                width:400px;
+                background-color: aliceblue;
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+                position:relative;
+                top:100px;
+                left:600px;
+            }
+            h1{
+                color:green;
+                text-align: center;
+            }
+             p.one::first-line{
+                color:red;
+                font-weight: bold;
+               
+             }
+             p{
+                color:green;
+                text-align: center;
+             }
+            
+        </style>
+    </head>
+    <body>
+       
+        <div>
+            <h1>first-line element</h1>
+        <p class="one">This is a Paragraph using  first line pseudo element</p>
+             
+            <p> to style first line of a paragraph. Content in the first</p> 
+                     <p>  line turns red and bold. </p>
+             
+      </div>
+    </body>
+</html>
+           
+    

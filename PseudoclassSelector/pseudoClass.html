@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pseudo Class</title>
+        <style>
+            h1{
+                text-decoration: underline green 2px;
+                text-align: center;
+            }
+            p{
+                color:black;
+            }
+            :not(p){
+                color:white;
+            }
+            :root{
+                background-color: goldenrod;
+            }
+            p:empty{
+                background-color: violet;
+                height: 15px;
+                width:100%;
+            }
+           p:only-child{
+                background-color: lightgreen;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Pseudo Class</h1>
+    <p>Emma is writing <i>letter,</i>The letter is for her <i>Uncle.</i></p>
+    <p>My Favourite Fruit is <i>Grapes,</i> the color is <i>green</i> </p>
+    <p></p>
+        <div>
+        <p><i>JavaScript</i> is a scripting language,Which can be used in the <i>HTML document</i></p>
+    </div>
+        <section>
+        <p>SQL stands for <i>Structured Query Language</i></p>
+        <p>Cascading style sheet <i>CSS</i>,is used for <i>styling</i>the web pages.</p>
+        <p>HTML stand for<i>Hypertext Markup Language, </i>it creates a <i>structure</i> for the webpages.</p>
+    </section>
+    <div>
+       <p></p>
+        <p>empty element before it</p>
+    </div>
+    </body>
+</html>

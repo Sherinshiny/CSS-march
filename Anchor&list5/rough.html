@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link in Button Style</title>
+    <style>
+        a {
+            text-decoration: none;
+            margin-left: 40px;
+        }
+
+        a.visited {
+            background-color: teal;
+        }
+
+        a.unvisited {
+            background-color: tan;
+
+        }
+
+        a:hover{
+            background-color: maroon;
+           
+                color:white;
+                padding:20px;
+                border-bottom: 2px solid white;
+        }
+
+        a.active {
+            background-color: aquamarine;
+        }
+
+        .line1 {
+
+            background-color: red;
+        }
+
+        .line2 {
+
+            background-color: yellow;
+        }
+
+        .line3 {
+
+            background-color: hotpink;
+        }
+        body{
+            background-color: black;
+        }
+
+        nav {
+            padding: 20px 30px;
+            word-spacing: 30px;
+            height: 75px;
+            width: 800px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav class="line1">
+            <a href="https://en.wikipedia.org/wiki/Peacock_(streaming_service)">peacock</a>
+            <a href="https://en.wikipedia.org/wiki/Butterfly">Butterfly</a>
+            <a href="https://en.wikipedia.org/wiki/Parrot">Parrot</a>
+            <a href="https://en.wikipedia.org/wiki/Bluebird">Blue Bird</a>
+            <a href="https://en.wikipedia.org/wiki/Hen">Hen</a>
+        </nav>
+        <nav class="line2">
+            <a href="#">HOME</a>
+            <a href="#">ARICLES</a>
+            <a href="#" style="word-spacing: normal;">WEB DESIGNING</a>
+            <a href="#">DEVELOPMENT</a>
+            <a href="#">TUTORIAL</a>
+
+        </nav>
+        <nav class="line3">
+            <a href="#">SILENT</a>
+            <a href="#">EFFICIENCY</a>
+            <a href="#">TRAVEL</a>
+            <a href="#">AGENCY</a>
+            <a href="#">ONLINE</a>
+        </nav>
+    </div>
+</body>
+
+</html>

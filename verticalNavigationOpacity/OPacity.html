@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Web Page Design</title>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <script src="https://kit.fontawesome.com/3b11c16bcb.js" crossorigin="anonymous"></script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    #box {
+      height: 700px;
+      width: 1000px;
+      border: 1px solid black;
+      background-image: url(./../boat.jpg);
+      background-size: cover;
+      position: relative;
+    }
+
+    #left {
+      height: 100%;
+      width: 500px;
+      background-color: rgb(63, 24, 63);
+      opacity: 0.8;
+      position: absolute;
+      top: 0px;
+    }
+
+    h1 {
+      color: white;
+      font-size: 60px;
+
+      position: absolute;
+      top: 150px;
+      left: 100px;
+
+    }
+
+    p#one {
+      color: white;
+      opacity: 0.7;
+      position: absolute;
+      top: 270px;
+      left: 100px;
+
+    }
+
+    #search {
+      height: 50px;
+      width: 300px;
+      border-radius: 25px;
+      border: 3px solid white;
+      color: white;
+
+      position: absolute;
+      top: 370px;
+      left: 100px;
+    }
+
+    p.search {
+      position: absolute;
+      color: white;
+      opacity: 0.7;
+      left: 10px;
+    }
+
+    h4 {
+      color: white;
+      position: absolute;
+      left: 40px;
+      top: 20px;
+    }
+
+    i {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      left: 50px;
+      top: 15px;
+    }
+
+    #backArrow {
+      position: absolute;
+      left: 500px;
+      top: 645px;
+    }
+
+    #right {
+      height: 100%;
+      width: 500px;
+
+    }
+
+    #imageOne {
+      height: 60px;
+      width: 80px;
+      position: absolute;
+      left: 540px;
+      top: 620px;
+      border: 3px solid white;
+      background-image: url(./firstboat.jpg);
+      background-size: cover;
+    }
+
+    #imageTwo {
+      height: 40px;
+      width: 60px;
+      position: absolute;
+      left: 640px;
+      top: 630px;
+
+      background-image: url(./secondImage.jpg);
+      background-size: cover;
+    }
+
+    #imageThree {
+      height: 40px;
+      width: 60px;
+      position: absolute;
+      left: 720px;
+      top: 630px;
+
+      background-image: url(./thirdImage.jpg);
+      background-size: cover;
+    }
+
+    #imageFour {
+      height: 40px;
+      width: 60px;
+      position: absolute;
+      left: 790px;
+      top: 630px;
+
+      background-image: url(./fourthimage.jpg);
+      background-size: cover;
+    }
+
+    #imageFive {
+      height: 40px;
+      width: 60px;
+      position: absolute;
+      left: 870px;
+      top: 630px;
+
+      background-image: url(./fifthImage.jpg);
+      background-size: cover;
+    }
+
+    #frontArrow {
+      height: 40px;
+      width: 60px;
+      position: absolute;
+      left: 930px;
+      top: 630px;
+    }
+
+    #rightTop {
+      height: 30px;
+      width: 100px;
+      color: white;
+      border: 2px solid white;
+      border-radius: 25px;
+      position: absolute;
+      left: 800px;
+      top: 30px;
+    }
+
+    p.explore {
+      color: white;
+      position: absolute;
+      left: 18px;
+      top: -9px;
+    }
+
+    #dp {
+      height: 40px;
+      width: 40px;
+      background-image: url(./sherinpp.jpg);
+      border-radius: 50%;
+      position: absolute;
+      left: 930px;
+      top: 26px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="box">
+    <div id="left">
+      <i class='fas fa-camera'></i>
+      <h4>Radiance</h4>
+      <h1>HTML & CSS</h1>
+      <p id="one"><small>Cascading Style Sheets, fondly referred to as CSS, is a simply designed
+          language intended to simplify the process of making web pages presentable.
+          CSS allows you to apply styles to web pages</small></p>
+      <div id="search">
+        <p class="search">Search</p>
+      </div>
+      <div id="right">
+        <i class='fas fa-arrow-left' style='font-size:18px;color:white' id="backArrow"></i>
+        <div id="imageOne"></div>
+        <div id="imageTwo"></div>
+        <div id="imageThree"></div>
+        <div id="imageFour"></div>
+        <div id="imageFive"></div>
+        <div id="frontArrow"> <i class='fas fa-arrow-right' style='font-size:18px;color:white'></i></div>
+        <div id="rightTop">
+          <p class="explore">Explore</p>
+        </div>
+        <div id="dp"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
