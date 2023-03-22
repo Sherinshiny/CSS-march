@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fieldset in a form</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        div{
+            height:700px;
+            width:100%;
+            
+            position: relative;
+            left:50px;
+        }
+        ol{
+            margin:10px;
+            padding:10px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif
+        }
+        li{
+            list-style-type: none;
+        }
+        fieldset{
+            width:30%;
+           
+        }
+        #secondField{
+            margin-bottom: 10px;
+        }
+        h1{
+            margin-left: 200px;
+        }
+        select{
+            width:200px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <h1>Form</h1>
+    <form>
+        <fieldset>
+            <legend>Name</legend>
+            <ol>
+            <li><label for="name">First Name</label> <li></li>
+                <li><input type="text" id="name" name="Name"placeholder="First Name"> <li> </ol>
+                <ol> <li> <label for="name">Last Name</label> </li>
+            <li> <input type="text" id="name" name="Name"placeholder="Last Name"></li>
+        </ol>
+        </fieldset>
+        <fieldset id="secondField">
+            <legend>Other Questions</legend>
+            <ol>
+            <li><label >Choose a drink</label></li>
+            <li><input type="radio" id="coffee" name="Coffee">
+                <label for="coffee">Coffee</label>
+            </li>
+            <li><input type="radio" id="tea" name="tea">
+                <label for="tea">Tea</label>
+            </li>
+            <li><input type="radio" id="hotchoco" name="hotchoco">
+                <label for="hotchoco">Hot Chocolate</label>
+            </li>
+        </ol>
+            <ol>
+                <li>
+                    <label >What icecream do you like?</label>
+
+                </li>
+                <li><input type="checkbox" id="chocolate" name="chocolate"  value="chocolate">   
+                <label for="chocolate">Chocolate</label>  </li>
+                <li><input type="checkbox" id="chocolatepudd" name="chocolatepudd"  value="chocolatepudd">   
+                    <label for="chocolatepudd">Chocolate Pudding</label>  </li>
+                    <li><input type="checkbox" id="chocolatePButter" name="chocolatePButter"  value="chocolatePButter">   
+                        <label for="chocolatePButter">Chocolate Peanut Butter</label>  </li>
+                        <li><input type="checkbox" id="Vanilla" name="Vanilla"  value="Vanilla">   
+                            <label for="Vanilla">Vanilla</label>  </li>
+                            <li><input type="checkbox" id="strawberry" name="strawberry"  value="strawberry">   
+                                <label for="strawberry">Strawberry</label>  </li>
+            </ol>
+            <ol>
+                <li><label for ="school">Select a school</label>            </li>
+                <li><select id="school"  name="school"  >
+                    <option value="Hardvard" selected>Hardvard</option>
+                    <option value="Hardvard">Hebron</option>
+                    <option value="Hardvard">Spartan</option>
+                </select>                    </li>
+            </ol>
+            <ol>
+                <li><label for="comments">Please Provide Comments</label></li>
+                <li><textarea  id="comments" name="comments"></textarea> </li>
+            </ol>
+        </fieldset>
+        <li>
+            <input type="submit" value="Submit Form" > 
+        </li>
+    </form>
+</div>
+</body>
+</html>

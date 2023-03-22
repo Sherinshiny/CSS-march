@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counters in Nested List</title>
+    <style>
+        :root{
+            background-color: orangered;
+            color:white
+        }
+        ol{
+            list-style-type: none;
+            counter-reset: section;
+        }
+        li::before{
+            counter-increment: section;
+            content:counters(section,". ")". ";
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Counter used in Nested List</h1>
+    <ol>
+        <li>Apple
+            <ol>
+                <li>Red</li>
+                <li>green</li>
+            </ol>
+        </li>
+        <li>Mango
+            <ol>
+                <li>Ripe</li>
+                <li>Unripe</li>
+            </ol>
+        </li>
+        <li>PineApple</li>
+        <li>Grapes
+            <ol>
+                <li>Black
+                    <ol>
+                        <li>Seed</li>
+                        <li>Seed-Less</li>
+                    </ol>
+                </li>
+                <li>green
+                    <ol>
+                        <li>Seed</li>
+                        <li>Seed-Less</li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+    </ol>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counters in Nested List</title>
+    <style>
+        :root{
+            background-image: url(./feather.jfif);
+            background-size:cover ;
+            color:white
+        }
+       p{
+        color:aqua;
+       }
+       body{
+        counter-reset: mainSection;
+       }
+       h1::before{
+        counter-increment:mainSection ;
+        content: counter(mainSection)". ";
+       }
+       h1{
+        counter-reset: subSection;
+       }
+       p::before{
+        counter-increment:subSection ;
+        content: counter(mainSection)". "counter(subSection)". ";
+       }
+
+
+    </style>
+</head>
+<body>
+    
+    
+      <h1> Hyper Text Markup Language</h1>
+            
+                <p>HTML contains series of elements</p>
+                <p>HTML attributes provides additional information to the elements</p>
+                <p>Semantic elements used in HTML5</p>
+            
+       <h1>Cascading Style Sheet</h1> 
+           
+                <p>CSS is used to style and layout the webpages.</p>
+                <p>CSS describes how HTML elements should be displayed</p>
+                <p>CSS saves a lot of work.It can control the layout of multiple webpages all at once.</p>
+            
+        
+       <h1> Javascript</h1>
+           
+                <p>JS is the programminglanguage of the web </p>
+                <p>JS is a lightweight programming language. </p>
+                <p>JS is easy to learn</p>
+                   
+               
+            
+</body>
+</html>

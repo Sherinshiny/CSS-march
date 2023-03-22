@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3b11c16bcb.js" crossorigin="anonymous"></script>
+    <title>Online Page Design</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        header {
+            height: 80px;
+            width: 100%;
+            background-color: rgb(206, 174, 45);
+            border-top: 3px solid black;
+            position: relative;
+        }
+
+        #firstIcon {
+            height: 50px;
+            width: 50px;
+            background-color: white;
+            border-radius: 10px;
+            position: absolute;
+            left: 10px;
+            top: 15px;
+        }
+
+        #firstInnerIcon {
+            position: absolute;
+            left: 12px;
+            top: 10px;
+        }
+
+        input[type=search] {
+            background-image: url(./download.png);
+            background-repeat: no-repeat;
+            background-position: 350px;
+            background-size: 30px;
+            width: 400px;
+            height: 40px;
+            border-radius: 15px;
+        }
+
+        #search {
+            position: absolute;
+            left: 700px;
+            top: 20px;
+        }
+
+        #heart {
+            position: absolute;
+            left: 1300px;
+            top: 20px;
+        }
+
+        #human {
+            position: absolute;
+            left: 1700px;
+            top: 20px;
+        }
+
+        #cart {
+            position: absolute;
+            left: 1500px;
+            top: 20px;
+        }
+
+        nav {
+            background-color: bisque;
+            width: 23%;
+            margin-top: 10px;
+            float: left;
+        }
+
+
+
+        li {
+            list-style-type: none;
+            padding: 10px;
+            margin: 10px;
+
+
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        ol {
+            font-size: 30px;
+
+            font-style: italic;
+        }
+
+        ol a {
+            text-decoration: underline gray 2px;
+        }
+
+        #main {
+            background-color: black;
+
+            border-radius: 10px;
+            text-align: center;
+
+        }
+
+        a.one {
+            font-size: 30px;
+            color: white;
+            font-style: italic;
+            text-decoration: none;
+        }
+
+
+        section {
+
+            float: left;
+            height: auto;
+
+            padding: 20px;
+            position: relative;
+
+        }
+
+        #sort {
+            background-color: gray;
+            position: absolute;
+            left: 1200px
+        }
+
+        input[type=text] {
+            background-color: rgb(230, 225, 225);
+            color: black;
+            width: 210px;
+            height: 35px;
+        }
+
+        #sortIcon {
+            background-color: grey;
+            position: absolute;
+            left: 1370px
+        }
+
+        #imgOne {
+            height: 300px;
+            width: 280px;
+            border: 1px solid black;
+            position: absolute;
+            top: 100px;
+        }
+
+        .img {
+            padding: 0px;
+            text-align: center;
+        }
+
+        #deskHeart {
+            position: absolute;
+            left: 30px;
+            top: 255px;
+        }
+
+        #deskCart {
+            position: absolute;
+            left: 220px;
+            top: 255px;
+        }
+
+        #imgTwo {
+            height: 300px;
+            width: 280px;
+            border: 1px solid black;
+            position: absolute;
+            top: 100px;
+            left: 380px;
+        }
+
+        #imgThree {
+            height: 300px;
+            width: 280px;
+            border: 1px solid black;
+            position: absolute;
+            top: 100px;
+            left: 740px;
+        }
+
+        #imgFour {
+            height: 300px;
+            width: 280px;
+            border: 1px solid black;
+            position: absolute;
+            top: 100px;
+            left: 1100px;
+        }
+
+        #imgFive {
+            height: 300px;
+            width: 280px;
+            border: 1px solid black;
+            position: absolute;
+            top: 430px;
+        }
+
+        #imgSix {
+            height: 300px;
+            width: 280px;
+            border: 1px solid black;
+            position: absolute;
+            top: 430px;
+            left: 380px;
+        }
+
+        #imgSeven {
+            height: 300px;
+            width: 280px;
+            border: 1px solid black;
+            position: absolute;
+            top: 430px;
+            left: 740px;
+        }
+
+        #imgEight {
+            height: 300px;
+            width: 280px;
+            border: 1px solid black;
+            position: absolute;
+            top: 430px;
+            left: 1100px;
+        }
+        #imgNine {
+            height: 300px;
+            width: 280px;
+            border: 1px solid black;
+            position: absolute;
+            top: 790px;
+        }
+
+        #imgTen {
+            height: 300px;
+            width: 280px;
+            border: 1px solid black;
+            position: absolute;
+            top: 790px;
+            left: 380px;
+        }
+
+        #imgEleven {
+            height: 300px;
+            width: 280px;
+            border: 1px solid black;
+            position: absolute;
+            top: 790px;
+            left: 740px;
+        }
+
+        #imgTwelve {
+            height: 300px;
+            width: 280px;
+            border: 1px solid black;
+            position: absolute;
+            top: 790px;
+            left: 1100px;
+        }
+        #blue{
+            color:blue;
+        }
+        #showMore{
+            margin-left:5px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="firstIcon">
+            <i class='fas fa-align-justify' style='font-size:26px' id="firstInnerIcon"></i>
+        </div>
+        <div id="search">
+            <input type="search" name="search" placeholder="Search">
+        </div>
+        <div id="heart">
+            <i class="fa fa-heart-o" style="font-size:36px;"></i>
+        </div>
+        <div id="cart">
+            <i class='fas fa-shopping-cart' style='font-size:36px'></i>
+        </div>
+        <div id="human">
+            <i class="fa fa-user-o" style="font-size:36px"></i>
+        </div>
+    </header>
+    <nav>
+        <ol id="main">
+            <li><a href="" class="one">Categories</a></li>
+        </ol>
+        <ol>
+            <li><a href="">Clothing</a></li>
+            <hr>
+        </ol>
+        <ul>
+            <li><a href="">Coats</a></li>
+            <li><a href="">Suits</a></li>
+            <li><a href="">Jackets</a></li>
+            <li ><i class="fa-solid fa-circle-chevron-down" style='color:blue';></i><a href="#" id="blue" id="showMore">Show More</a></i></li>
+        </ul>
+        <ol>
+            <li><a href="">Electronic Devices</a></li>
+        </ol>
+        <ul>
+            <li><a href="">Computers & Acessories</a></li>
+            <li><a href="">T.V</a></li>
+            <li><a href="">Phone & Acessories</a></li>
+            <li ><i class="fa-solid fa-circle-chevron-down" style='color:blue';></i><a href="#" id="blue">Show More</a></li>
+        </ul>
+        <ol>
+            <li><a href="">Helps & Settings</a></li>
+        </ol>
+        <ul>
+            <li><a href="">Your Account</a></li>
+            <li><i class="fa-solid fa-globe"></i><a href="">English</a></li>
+            <li><i class="fa fa-comment-o" aria-hidden="true"></i><a href="#">Rate Us</a></li>
+            <li><i class="fa fa-sign-out" aria-hidden="true"></i><a href="#">Sign Out</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div id="sort">
+            <input type="text" name="search" placeholder="Sort by recomended">
+
+        </div>
+        <i class="fa fa-sort-amount-asc" style="font-size:34px" id="sortIcon"></i>
+        <div id="imgOne">
+            <ol>
+
+                <li class="img"><img src="./desktop.png"> </li>
+                <li class="img">
+                    <tr>Desktop</tr>
+                </li>
+                <li class="img">
+                    <tr>--$</tr>
+                </li>
+                <div id="deskHeart"><i class="fa fa-heart-o" style="font-size:26px;color:grey;"></i></div>
+                <div id="deskCart"><i class='fas fa-shopping-cart' style='font-size:26px;color:grey;'></i></div>
+            </ol>
+        </div>
+        <div id="imgTwo">
+            <ol>
+
+                <li class="img"><img src="./TV.png"> </li>
+                <li class="img">
+                    <tr>T.V</tr>
+                </li>
+                <li class="img">
+                    <tr>--$</tr>
+                </li>
+                <div id="deskHeart"><i class="fa fa-heart-o" style="font-size:26px;color:grey;"></i></div>
+                <div id="deskCart"><i class='fas fa-shopping-cart' style='font-size:26px;color:grey;'></i></div>
+            </ol>
+        </div>
+        <div id="imgThree">
+            <ol>
+
+                <li class="img"><img src="./coats.jpg"> </li>
+                <li class="img">
+                    <tr>Coats</tr>
+                </li>
+                <li class="img">
+                    <tr>--$</tr>
+                </li>
+                <div id="deskHeart"><i class="fa fa-heart-o" style="font-size:26px;color:grey;"></i></div>
+                <div id="deskCart"><i class='fas fa-shopping-cart' style='font-size:26px;color:grey;'></i></div>
+            </ol>
+        </div>
+        <div id="imgFour">
+            <ol>
+
+                <li class="img"><img src="./Phones.jpg"> </li>
+                <li class="img">
+                    <tr>Phones</tr>
+                </li>
+                <li class="img">
+                    <tr>--$</tr>
+                </li>
+                <div id="deskHeart"><i class="fa fa-heart-o" style="font-size:26px;color:grey;"></i></div>
+                <div id="deskCart"><i class='fas fa-shopping-cart' style='font-size:26px;color:grey;'></i></div>
+            </ol>
+        </div>
+        <div id="imgFive">
+            <ol>
+
+                <li class="img"><img src="./suit.jpg"> </li>
+                <li class="img">
+                    <tr>Suit</tr>
+                </li>
+                <li class="img">
+                    <tr>--$</tr>
+                </li>
+                <div id="deskHeart"><i class="fa fa-heart-o" style="font-size:26px;color:grey;"></i></div>
+                <div id="deskCart"><i class='fas fa-shopping-cart' style='font-size:26px;color:grey;'></i></div>
+            </ol>
+        </div>
+        <div id="imgSix">
+            <ol>
+
+                <li class="img"><img src="./jacket.jpg"> </li>
+                <li class="img">
+                    <tr>Jacket</tr>
+                </li>
+                <li class="img">
+                    <tr>--$</tr>
+                </li>
+                <div id="deskHeart"><i class="fa fa-heart-o" style="font-size:26px;color:grey;"></i></div>
+                <div id="deskCart"><i class='fas fa-shopping-cart' style='font-size:26px;color:grey;'></i></div>
+            </ol>
+        </div>
+        <div id="imgSeven">
+            <ol>
+
+                <li class="img"><img src="./mouse.png"> </li>
+                <li class="img">
+                    <tr>Mouse & Keyboard</tr>
+                </li>
+                <li class="img">
+                    <tr>--$</tr>
+                </li>
+                <div id="deskHeart"><i class="fa fa-heart-o" style="font-size:26px;color:grey;"></i></div>
+                <div id="deskCart"><i class='fas fa-shopping-cart' style='font-size:26px;color:grey;'></i></div>
+            </ol>
+        </div>
+        <div id="imgEight">
+            <ol>
+
+                <li class="img"><img src="./pant.jpg"> </li>
+                <li class="img">
+                    <tr>Pants</tr>
+                </li>
+                <li class="img">
+                    <tr>--$</tr>
+                </li>
+                <div id="deskHeart"><i class="fa fa-heart-o" style="font-size:26px;color:grey;"></i></div>
+                <div id="deskCart"><i class='fas fa-shopping-cart' style='font-size:26px;color:grey;'></i></div>
+            </ol>
+        </div>
+        <div id="imgNine">
+            <ol>
+
+                <li class="img"><img src="./suit.jpg"> </li>
+                <li class="img">
+                    <tr>Suit</tr>
+                </li>
+                <li class="img">
+                    <tr>--$</tr>
+                </li>
+                <div id="deskHeart"><i class="fa fa-heart-o" style="font-size:26px;color:grey;"></i></div>
+                <div id="deskCart"><i class='fas fa-shopping-cart' style='font-size:26px;color:grey;'></i></div>
+            </ol>
+        </div>
+        <div id="imgTen">
+            <ol>
+
+                <li class="img"><img src="./jacket.jpg"> </li>
+                <li class="img">
+                    <tr>Jacket</tr>
+                </li>
+                <li class="img">
+                    <tr>--$</tr>
+                </li>
+                <div id="deskHeart"><i class="fa fa-heart-o" style="font-size:26px;color:grey;"></i></div>
+                <div id="deskCart"><i class='fas fa-shopping-cart' style='font-size:26px;color:grey;'></i></div>
+            </ol>
+        </div>
+        <div id="imgEleven">
+            <ol>
+
+                <li class="img"><img src="./mouse.png"> </li>
+                <li class="img">
+                    <tr>Mouse & Keyboard</tr>
+                </li>
+                <li class="img">
+                    <tr>--$</tr>
+                </li>
+                <div id="deskHeart"><i class="fa fa-heart-o" style="font-size:26px;color:grey;"></i></div>
+                <div id="deskCart"><i class='fas fa-shopping-cart' style='font-size:26px;color:grey;'></i></div>
+            </ol>
+        </div>
+        <div id="imgTwelve">
+            <ol>
+
+                <li class="img"><img src="./pant.jpg"> </li>
+                <li class="img">
+                    <tr>Pants</tr>
+                </li>
+                <li class="img">
+                    <tr>--$</tr>
+                </li>
+                <div id="deskHeart"><i class="fa fa-heart-o" style="font-size:26px;color:grey;"></i></div>
+                <div id="deskCart"><i class='fas fa-shopping-cart' style='font-size:26px;color:grey;'></i></div>
+            </ol>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        div {
+            height: 900px;
+            width: 1000px;
+            border: 1px solid black;
+            background-color: rgb(237, 215, 215);
+        }
+
+        li {
+            list-style-type: none;
+            padding: 5px;
+        }
+
+        label {
+            display: inline-block;
+            width: 150px;
+        }
+        input{
+            height: 30px;
+            width: 400px;
+        }
+        input[type=radio]{
+            width:20px;
+        }
+
+        /*input[type=text] {
+            height: 30px;
+            width: 400px;
+        }
+
+        input[type=mail] {
+            height: 30px;
+            width: 400px;
+
+        }
+
+        input[type=tel] {
+            height: 30px;
+            width: 400px;
+
+        }
+
+        input[type=password] {
+            height: 30px;
+            width: 400px;
+
+        }*/
+        input[type=submit]{
+            background-color: green;
+            padding:10px
+        }
+        textarea{
+            height:200px;
+            width:400px;
+        }
+       .block{
+        
+       margin-left: 150px;
+       }
+    </style>
+
+</head>
+
+<body>
+    <div>
+
+        <form>
+            <ol>
+                <li>
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" placeholder="Enter your First Name">
+                </li>
+                <li>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" placeholder="Enter your Last Name">
+                </li>
+                <li>
+                    <label for="mail">Email:</label>
+                    <input type="mail" id="mail" name="email" placeholder="It should contain @.">
+                </li>
+                <li>
+                    <label for="num">Mobile:</label>
+                    <input type="tel" id="num" name="mobile" placeholder="Only 10 digits are allowed">
+                </li>
+                <li>
+                    <label>Gender:</label>
+                    <input type="radio" id="male" name="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="female">
+                    <label for="female">Female</label>
+
+                </li>
+                <li>
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob">
+
+                </li>
+                <li>
+                    <label for="addr">Address:</label>
+                    <textarea name="addr"></textarea>
+
+                </li>
+                <li>
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="lname">
+
+                </li>
+                <li>
+                    <label for="pin">Area Pin:</label>
+                    <input type="number" id="pin" name="pin" pattern="[0-9]{6}">
+
+                </li>
+                <li>
+                    <label for="state">State:</label>
+                    <input type="text" id="state" name="state">
+
+                </li>
+                <li>
+                    <label for="Qualifi">Qualification:</label>
+                    <select id="Qualifi" name="Qualification">
+                        <option value="select Qualification" selected>Select Qualification</option>
+                        <option value="select Qualification">B.E</option>
+                        <option value="select Qualification">M.E</option>
+                        <option value="select Qualification">B.Sc</option>
+                    </select>
+
+                </li>
+                <li >
+                    <label>Specialization:</label>
+                    <br>
+                    <input type="checkbox" id="cs" name="cs"class="block">
+                    <label for="cs" class="block">Computer Science </label>
+                    <br>
+                    <input type="checkbox" id="it" name="it"class="block">
+                    <label for="it"class="block">Information Technology </label>
+                    <br>
+                    <input type="checkbox" id="ca" name="ca"class="block">
+                    <label for="ca"class="block">Computer Architecture </label>
+                    <br>
+                    <input type="checkbox" id="tc" name="tc"class="block">
+                    <label for="tc"class="block">Tele Communication </label>
+                </li>
+                <li>
+                    <label for="passd">Password</label>
+                    <input type="password" id="passd" name="passd">
+                </li>
+                <li>
+                    <input type="submit" value="Registered">
+
+                </li>
+
+
+
+            </ol>
+        </form>
+    </div>
+</body>
+
+</html>

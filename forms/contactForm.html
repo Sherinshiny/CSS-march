@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        :root{
+            background-color: blue;
+            color:white;
+        }
+       li{
+            list-style-type: none;
+            padding:10px;
+        }
+        label{
+            display:inline-block;
+            width:150px;
+        }
+        h2{
+            margin-left: 50px;
+        }
+        input[type=text]{
+            height:20px;
+            width:200px;
+            margin-left: 10px;;
+        }
+        input[type=mail]{
+            height:30px;
+            width:420px;
+            margin-left: 10px;
+        }
+        input[type=tel]{
+            height:30px;
+            width:125px;
+            margin-left: 10px;
+        }
+        select{
+            height:30px;
+            width:295px;
+            margin-left: 10px;
+           
+        }
+        textarea{
+            height:70px;
+            width:430px;
+            resize:none;
+            margin-left: 10px;
+
+        }
+        
+      
+        input[type=submit]{
+            padding: 10px;
+            width:10%;
+            background-color: transparent;
+            border:1px solid white;
+            border-radius: 10px;
+            color:white;
+
+        }
+        fieldset{
+            width:420px;
+            margin-left: 150px;
+            background-color: white;
+            color:black;
+            border:none;
+        }
+        hr{
+            width:34%;
+            margin-left: 0%;
+        }
+        .required::after{
+            content:"*";
+        }
+        label{
+            vertical-align: top;
+        }
+        #bottom{
+          vertical-align:bottom;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Contact Form</h2>
+        <form>
+            <ol>
+                <li>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="Name"placeholder="First Name">
+                 <input type="text" id="name" name="Name"placeholder="First Name">
+                </li>
+                <li>
+                    <label for="email">Email Address</label>
+                    <input type="mail" id="email" name="Email-Address"placeholder="eg:hello@contact.net">
+                </li>
+                <li>
+                    <label for="phone" class="required" >Phone</label>               
+                    <input type="tel" id="phone" name="Phone"placeholder="###" pattern="[0-9]{3}">
+                    <input type="tel" id="phone" name="Phone"placeholder="###" pattern="[0-9]{3}">
+                    <input type="tel" id="phone" name="Phone"placeholder="####" pattern="[0-9]{4}">
+                 </li>
+                 <li>
+                    <label for="messagesub" class="required">Message Subject</label> 
+                    <select id="messagesub"name="Message Subject" required>
+                        <option value="other">Other</op    tion>
+                        <option value="other">Other</option>
+                        <option value="other">Other</option>
+                    </select>
+                 </li>
+                 <li>
+                    <label for="message" class="required">Message</label>
+                    <textarea  id="message" name="Message"></textarea>
+                </li>
+                <li>
+                    <label for="verify" class="required" id="bottom">Verification</label>
+                     <fieldset>   
+                        <legend></legend>               
+                    <input type="checkbox" id="check"name="checkbox" value="i am not a robot">
+                    <label for="check">i am not a robot</label>
+                </fieldset> 
+                </li>
+                <hr>
+                <li>
+                    <input type="submit" value="Submit Form" > 
+                </li>
+            </ol>
+        </form>
+    </div>
+    
+</body>
+</html>

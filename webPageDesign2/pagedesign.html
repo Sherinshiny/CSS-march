@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3b11c16bcb.js" crossorigin="anonymous"></script>
+    <title>Page Design</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        body{
+            background-image: url(./mountain.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+           
+        }
+        header{
+            width:100%;
+            height:100px;
+            border:1px solid black;
+            text-align: center;
+        }
+           ol li{
+            list-style-type: none;
+            display:inline;
+            margin-right:30px;
+                     
+        }
+        li a{
+            text-decoration: none;
+            color:black;
+        }
+        section{
+            position: relative;
+        }
+        #one{
+            position: absolute;
+            left:300px;
+            top:200px;
+        }
+        h1{
+            color:black;
+            font-size: 50px;
+        }
+        #two{
+            position: absolute;
+            left:300px;
+            top:450px;
+        }
+        select{
+            height:30px;
+            width:250px;
+        }
+        input{
+            background-color: blue;
+            color:white;
+            height:30px;
+            width:150px;
+            border:none;
+        }
+        #f{
+            height:50px;
+            width:50px;
+            border:1px solid white;
+            border-radius: 50%;
+            
+            position: absolute;
+           right:30px;
+            top:300px;
+        }
+        
+       #in{
+            height:50px;
+            width:50px;
+            border:1px solid white;
+            border-radius: 50%;
+            position: absolute;
+           right:30px;
+            top:380px;
+        }
+        
+        #g{
+            height:50px;
+            width:50px;
+            border:1px solid white;
+            border-radius: 50%;
+            position: absolute;
+           right:30px;
+            top:460px;
+        }
+        #letters{
+            color:white;
+            font-size: 30px;
+            position: absolute;
+           right:18px;
+            top:10px;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+       
+        <ol>
+            <li><img src="./smallmountain.jpg"   alt="mountain" height="40" width="100"> </li>
+            <li><a href="">ExploreTour</a></li>
+             <li><a href="">Home</a></li>
+              <li><a href="">Tours</a></li>
+               <li><a href="">About</a></li>
+                <li><a href="">Advantages</a></li>
+                 <li><a href="">Block</a></li>
+                  <li><a href="">Contacts</a></li>
+        </ol>
+    </header>
+    <section>
+        <div id="one"><h1>The Best Trips Around Iceland<br> Begin with Us</h1></div>
+       <div id="two">
+        <select id="date"name="date">
+            <option value="Date">Date</option>
+            <option value="Date">Date</option>
+            <option value="Date">Date</option>
+        </select>
+        <select id="price"name="price">
+            <option value="Date">Your Price Range</option>
+            <option value="Date">Date</option>
+            <option value="Date">Date</option>
+        </select>
+        <input type="submit" value="Search Tours">
+    </div> 
+    <div id="f">
+        <p id="letters">f</p> 
+
+    </div>
+    <div id="in">
+        <p id="letters">in</p>
+    </div>
+    <div id="g">
+        <p id="letters">G</p>
+    </div>
+    </section>
+</body>
+</html>

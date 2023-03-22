@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropDown Box</title>
+</head>
+<style>
+    header {
+        height: 150px;
+        width: 100%;
+        background-color: navy;
+        position: relative;
+    }
+
+    #menubar {
+        position: absolute;
+        top: 50px;
+        left: 500px;
+
+
+    }
+
+    ul li {
+        list-style: none;
+        display: inline;
+        padding: 40px 30px;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: white;
+
+    }
+
+    #content {
+        display: none;
+        position: absolute;
+        left: 250px;
+        z-index: +1;
+        background-color: red;
+        width: 200px;
+    }
+
+    #content a {
+        padding: 12px 11px;
+    }
+
+    #content a:hover {
+        background-color: aqua;
+    }
+
+    #work:hover #content {
+        display: block;
+    }
+
+    #subContent {
+        display: none;
+        position: absolute;
+        left: 250px;
+        z-index: +1;
+        background-color: orangered;
+        width: 200px;
+    }
+
+    #content a {
+        padding: 12px 11px;
+    }
+
+    #subContent a:hover {
+        background-color: grey;
+    }
+
+    #photography:hover #subContent {
+        display: block;
+    }
+</style>
+
+<body>
+    <header>
+        <div>
+            <ul id="menubar">
+                <li><a href="./../boat.jpg">Home</a></li>
+                <li><a href="./../boat.jpg">About</a></li>
+                <li id="work"><a href="./../boat.jpg">Work</a>
+                    <ul id="content">
+                        <li> <a href="./../boat.jpg">Design</a></li>
+                        <li> <a href="./../boat.jpg">Development</a></li>
+                        <li id="photography"> <a href="./../boat.jpg">Photography</a>
+                            <ul id="subContent">
+                                <li><a href="./../boat.jpg">Nature</a></li>
+                                <li><a href="./../boat.jpg">People</a></li>
+                                <li><a href="./../boat.jpg">Film</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                 <li><a href="./../boat.jpg">Writing</a></li>
+                    
+            </ul>
+
+
+
+
+
+
+
+    </header>
+</body>
+
+</html>

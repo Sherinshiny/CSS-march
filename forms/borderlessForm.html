@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borderless Form</title>
+    <style>
+        
+    #outer{
+        height: 500px;
+            width: 600px;
+            background-image: url(./../counters/blue.jpg);
+            border: 1px solid black;
+            position: relative;
+            
+            
+    }
+
+    #inner{
+            height: 400px;
+            width: 500px;
+            background-color: black;
+            border: 1px solid black;
+            color: aqua;
+            position: absolute;
+            left:50px;
+            top:50px;
+        }
+
+        li {
+            list-style-type: none;
+            padding: 10px;
+
+        }
+
+        input[type] {
+            border: none;
+            outline: none;
+            background-color: black;
+            border-bottom: 2px solid blue;
+            width:95%;
+        }
+
+        textarea {
+            border: none;
+            outline: none;
+            background-color: black;
+            border-bottom: 2px solid blue;
+            width:95%;
+        }
+
+        input[type=submit] {
+            background-color: aqua;
+            color: white;
+            padding: 20px;
+            width: 95%
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div id="outer">
+    <div id="inner">
+        <form>
+
+            <ol>
+
+                <li><label for="name">Name</label>
+                    <input type="text" id="name" name="Name">
+                </li>
+                
+                <li><label for="email">Email Address</label>
+                    <input type="mail" id="email" name="Email-Address">
+                </li>
+               
+                <li><label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="Phone">
+                </li>
+                
+                <li><label for="sub">Subject</label>
+                    <input type="text" id="sub" name="Subject">
+                </li>
+               
+                <li><label for="message">Message</label>
+                    <textarea id="message" name="Message"></textarea>
+                    
+                <li><input type="submit" value="Send"> </li>
+            </ol>
+
+        </form>
+    </div>
+</div>
+</body>
+
+</html>
